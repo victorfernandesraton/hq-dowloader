@@ -1,102 +1,62 @@
-import Nullstack, { NullstackClientContext, NullstackNode } from 'nullstack';
-import Logo from 'nullstack/logo';
+import Nullstack, {
+	FormEvent,
+	NullstackClientContext,
+} from 'nullstack'
+import { HQInfo } from './service/hq-search'
+import { getHqsService } from './service/hq-now/hq-search'
+import InputStyle from './Input.scss'
+import { SearchItem } from './SearchResultItem'
 
 interface HomeProps {
-  greeting: string
+	greeting: string;
 }
 
-interface HomeLinkProps {
-  href: string
+type OnSearchProps = {
+	event: FormEvent<HTMLInputElement>
 }
-
-declare function Link(context: HomeLinkProps): NullstackNode
-declare function ActionLink(context: HomeLinkProps): NullstackNode
 
 class Home extends Nullstack<HomeProps> {
+	hqList: HQInfo[] = []
+	error: Error | null = null
+	prepare({ page }: NullstackClientContext<HomeProps>) {
+		page.title = 'Hq Searcher'
+		page.description = 'Find HQ and export as PDF'
+	}
 
-  prepare({ project, page, greeting }: NullstackClientContext<HomeProps>) {
-    page.title = `${project.name} - ${greeting}`;
-    page.description = `${project.name} was made with Nullstack`;
-  }
+	async onSearch({ event }: OnSearchProps) {
+		const query = event.target?.value
+		try {
+			const data = await getHqsService(query)
+			this.hqList = data
+		} catch (error) {
+			this.error = error
+		}
+	}
 
-  renderLink({ children, href }: NullstackClientContext<HomeProps & HomeLinkProps>) {
-    const link = href + '?ref=create-nullstack-app';
-    return (
-      <a class="text-pink-500 ml-1" href={link} target="_blank" rel="noopener noreferrer">
-        {children}
-      </a>
-    )
-  }
-
-  renderActionLink({ children, href }: NullstackClientContext<HomeProps & HomeLinkProps>) {
-    const link = href + '?ref=create-nullstack-app';
-    return (
-      <a class="inline-block text-pink-500 mb-2 ml-1 px-1 py-2" href={link} target="_blank" rel="noopener noreferrer">
-        {children}
-      </a>
-    )
-  }
-
-  render({ project, greeting }: NullstackClientContext<HomeProps>) {
-    return (
-      <section class="w-full max-w-3xl min-h-screen my-0 mx-auto flex items-center p-6 flex-wrap md:flex-nowrap">
-        <article class="w-full mb-5">
-          <Link href="https://nullstack.app/">
-            <div class="ml-1">
-              <Logo height={60} light />
-            </div>
-          </Link>
-          <h1 class="block font-crete-round tracking-widest font-bold text-lg mt-4"> {project.name} </h1>
-          <p class="block mt-4"> {greeting} </p>
-          <p class="block mt-4">
-            We made some examples to help you getting started! Take a look at the
-            <Link href="vscode://file/C:/Users/sussh/Desktop/Nullstack/create-nullstack-app/boomba/src">
-              src folder
-            </Link>.
-          </p>
-          <span class="block mt-4">
-            Hint: we have a
-            <Link href="vscode:extension/ChristianMortaro.vscode-nullstack">
-              VS Code Extension
-            </Link>
-          </span>
-          <ul class="block leading-snug mt-4">
-            <li>
-              <ActionLink href="https://nullstack.app/stateless-components">
-                🎉 Create your first component 
-              </ActionLink>
-            </li>
-            <li>
-              <ActionLink href="https://nullstack.app/routes-and-params">
-                ✨ Set your first route
-              </ActionLink>
-            </li>
-            <li>
-              <ActionLink href="https://nullstack.app/context">
-                ⚡ Define your context
-              </ActionLink>
-            </li>
-            <li>
-              <ActionLink href="https://github.com/nullstack/nullstack/stargazers">
-                ⭐ Leave a star on github
-              </ActionLink>
-            </li>
-            <li>
-              <ActionLink href="https://youtube.com/nullstack">
-                🎬 Subscribe to our Youtube Channel
-              </ActionLink>
-            </li>
-          </ul>
-        </article>
-        <aside class="w-full">
-          <Link href="https://nullstack.app/waifu">
-            <img class="w-full inline-block" src="/nulla-chan.webp" alt="Nulla-Chan: Nullstack's official waifu" />
-          </Link>
-        </aside>
-      </section>
-    )
-  }
-
+	render() {
+		return (
+			<section class="w-full max-w-8xl min-h-screen p-6 flex-col justify-center">
+				<article class="w-full mb-5 px-20 flex-col justfy-center">
+					<form>
+						<div class="bg-white rounded shadow-xl h-12 w-xl">
+							<label for="query"></label>
+							<input
+								class='w-full h-full px-2'
+								type="text"
+								id="query"
+								name="query"
+								oninput={this.onSearch}
+								debounce={500}
+							/>
+						</div>
+					</form>
+				</article>
+				<article>
+					{this.hqList.map(item => <SearchItem {...item} />)}
+				</article>
+			</section>
+		)
+	}
 }
 
-export default Home;
+export default Home
