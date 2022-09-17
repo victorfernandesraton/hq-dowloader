@@ -1,4 +1,4 @@
-import { HQInfo } from './service/hq-search'
+import { HQInfo } from './types/hqinfo.type'
 
 type SearchItemProps = HQInfo
 

@@ -2,7 +2,7 @@ import Nullstack, {
 	FormEvent,
 	NullstackClientContext,
 } from 'nullstack'
-import { HQInfo } from './service/hq-search'
+import { HQInfo } from './types/hqinfo.type'
 import { getHqsService } from './service/hq-now/hq-search'
 import InputStyle from './Input.scss'
 import { SearchItem } from './SearchResultItem'

@@ -1,4 +1,4 @@
-import { HQInfo } from '../hq-search'
+import { HQInfo } from '../../types/hqinfo.type'
 import { request } from './api'
 import { gql, } from 'graphql-tag'
 import { print } from 'graphql'
