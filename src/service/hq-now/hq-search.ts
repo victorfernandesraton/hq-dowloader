@@ -1,6 +1,7 @@
 import { HQInfo } from '../hq-search'
 import { request } from './api'
-
+import { gql, } from 'graphql-tag'
+import { print } from 'graphql'
 type HqSearchResponse = {
 	editoraId: number
 	id: number
@@ -11,10 +12,29 @@ type HqSearchResponse = {
 
 }
 
+const GET_HEQ_QUERY = gql`
+query getHqsByName($name: String!) {  
+	getHqsByName(name: $name) {    
+		id    
+		name    
+		editoraId    
+		status    
+		publisherName    
+		impressionsCount 
+		capitulos {
+			name
+			id
+			pictures {
+				pictureUrl
+			}
+		}
+	}
+}`
+
 export const getHqsService = async (query: string, signal?: AbortSignal): Promise<HQInfo[]> => {
 	const body = {
 		operationName: 'getHqsByName', variables: { name: query },
-		query: 'query getHqsByName($name: String!) {\n  getHqsByName(name: $name) {\n    id\n    name\n    editoraId\n    status\n    publisherName\n    impressionsCount\n  }\n}\n'
+		query: print(GET_HEQ_QUERY),
 	}
 	const response = await request({
 		method: 'POST',

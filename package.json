@@ -17,6 +17,8 @@
     "build": "npx nullstack build"
   },
   "dependencies": {
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
     "opencv-wasm": "^4.3.0-10",
     "wasm-pdf": "^0.1.11"
   }
