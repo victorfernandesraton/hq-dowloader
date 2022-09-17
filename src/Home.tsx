@@ -4,8 +4,8 @@ import Nullstack, {
 } from 'nullstack'
 import { HQInfo } from './types/hqinfo.type'
 import { getHqsService } from './service/hq-now/hq-search'
-import InputStyle from './Input.scss'
-import { SearchItem } from './SearchResultItem'
+import SearchResultItem from './SearchResultItem'
+// import SearchResultItem from './SearchResultItem'
 
 interface HomeProps {
 	greeting: string;
@@ -16,24 +16,34 @@ type OnSearchProps = {
 }
 
 class Home extends Nullstack<HomeProps> {
+	called = false
 	hqList: HQInfo[] = []
 	error: Error | null = null
+	loading = false
 	prepare({ page }: NullstackClientContext<HomeProps>) {
 		page.title = 'Hq Searcher'
 		page.description = 'Find HQ and export as PDF'
 	}
 
 	async onSearch({ event }: OnSearchProps) {
-		const query = event.target?.value
-		try {
-			const data = await getHqsService(query)
-			this.hqList = data
-		} catch (error) {
-			this.error = error
+		if (!this.loading) {
+
+			this.loading = true
+			const query = event.target?.value
+			try {
+				const data = await getHqsService(query)
+				this.hqList = data
+			} catch (error) {
+				this.error = error
+			} finally {
+				this.loading = false
+				this.called = true
+			}
 		}
 	}
 
 	render() {
+
 		return (
 			<section class="w-full max-w-8xl min-h-screen p-6 flex-col justify-center">
 				<article class="w-full mb-5 px-20 flex-col justfy-center">
@@ -52,7 +62,15 @@ class Home extends Nullstack<HomeProps> {
 					</form>
 				</article>
 				<article>
-					{this.hqList.map(item => <SearchItem {...item} />)}
+					{this.hqList.map(item => <SearchResultItem
+						pages={item.pages}
+						name={item.name}
+						internalCode={item.internalCode}
+					/>)}
+					{!this.loading && this.called && !this.hqList.length && (
+						<div>Nenhum resultado encontrado</div>
+					)}
+
 				</article>
 			</section>
 		)
