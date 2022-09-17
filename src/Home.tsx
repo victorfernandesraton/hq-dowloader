@@ -5,7 +5,6 @@ import Nullstack, {
 import { HQInfo } from './types/hqinfo.type'
 import { getHqsService } from './service/hq-now/hq-search'
 import SearchResultItem from './SearchResultItem'
-// import SearchResultItem from './SearchResultItem'
 
 interface HomeProps {
 	greeting: string;
