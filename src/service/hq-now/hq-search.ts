@@ -10,15 +10,17 @@ type HqSearchChapterPicturesResponse = {
 type HqSearchChapterResponse = {
 	name: string
 	id: number
+	number: number | string
 	pictures: HqSearchChapterPicturesResponse[]
 }
 export interface HqSearchResponse {
 	editoraId: number
 	id: number
-	impressionsCount: number
 	name: string
 	publisherName?: string
 	status: string
+	synopsis?: string
+	hqCover?: string
 	capitulos: HqSearchChapterResponse[]
 }
 
@@ -30,10 +32,12 @@ query getHqsByName($name: String!) {
 		editoraId    
 		status    
 		publisherName    
-		impressionsCount 
+		synopsis
+		hqCover
 		capitulos {
 			name
 			id
+			number
 			pictures {
 				pictureUrl
 			}
@@ -72,6 +76,7 @@ export const parseResult = (data: HqSearchResponse[]) => {
 			})
 		}
 		return {
+			cover: item.hqCover,
 			name: item.name,
 			internalCode: item.id,
 			pages: chapters

@@ -4,7 +4,7 @@ import Nullstack, {
 } from 'nullstack'
 import { HQInfo } from './types/hqinfo.type'
 import { getHqsService } from './service/hq-now/hq-search'
-import SearchResultItem from './SearchResultItem'
+import CardItem from './components/CardItem'
 
 interface HomeProps {
 	greeting: string;
@@ -61,7 +61,7 @@ class Home extends Nullstack<HomeProps> {
 					</form>
 				</article>
 				<article>
-					{this.hqList.map(item => <SearchResultItem
+					{this.hqList.map(item => <CardItem
 						pages={item.pages}
 						name={item.name}
 						internalCode={item.internalCode}

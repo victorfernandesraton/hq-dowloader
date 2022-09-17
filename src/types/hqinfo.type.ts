@@ -5,4 +5,5 @@ export type HQInfo = {
 	name: string,
 	url?: string,
 	pages: Chapter[]
+	cover?: string
 }

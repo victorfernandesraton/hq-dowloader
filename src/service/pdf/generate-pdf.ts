@@ -19,10 +19,13 @@ export const generatePdf = async (chapter: Chapter): Promise<Uint8Array> => {
 
 	for (const image of images) {
 		const page = pdfDoc.addPage()
+
 		const jpgImage = await pdfDoc.embedJpg(image)
+		page.setHeight(jpgImage.height)
+		page.setWidth(jpgImage.width)
 		page.drawImage(jpgImage, {
-			width: jpgImage.width / 1.78,
-			height: jpgImage.height / 1.78,
+			width: jpgImage.width,
+			height: jpgImage.height,
 			x: 0,
 			y: 0
 		})
