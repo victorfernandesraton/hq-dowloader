@@ -24,15 +24,47 @@ class Home extends Nullstack<HomeProps> {
 		page.description = 'Find HQ and export as PDF'
 	}
 
+
+	getLocalStorageSearch(): Array<{ query: string, value: HQInfo[] }> {
+		return JSON.parse(localStorage.getItem('query-history')) ?? []
+	}
+
+	async saveData({ query, data = [] }) {
+		const history = await this.getLocalStorageSearch()
+		if (history) {
+			if (history.length > 5) {
+				history.shift()
+			}
+			history.push({
+				query, value: data
+			})
+			await localStorage.setItem('query-history', JSON.stringify([...history]))
+		} else {
+			await localStorage.setItem('query-history', JSON.stringify([{ query: query, value: data }]))
+		}
+		return
+	}
+
 	async onSearch({ event }: OnSearchProps) {
 		if (!this.loading) {
-
 			this.loading = true
-			const query = event.target?.value
+			const { value } = event.target
 			try {
-				const data = await getHqsService(query)
-				this.hqList = data
+				const inStoreArray = await this.getLocalStorageSearch()
+				const inStore = inStoreArray.find(item => item.query === value)
+				console.log(inStore)
+				if (inStore) {
+					console.log(inStore.query, inStore.value)
+					this.hqList = inStore.value
+					return
+				} else {
+					const data = await getHqsService(value)
+					await this.saveData({ query: value, data })
+					this.hqList = data
+					return
+				}
 			} catch (error) {
+				console.log(error)
 				this.error = error
 			} finally {
 				this.loading = false
