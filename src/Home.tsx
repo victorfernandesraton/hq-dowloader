@@ -19,6 +19,7 @@ class Home extends Nullstack<HomeProps> {
 	hqList: HQInfo[] = []
 	error: Error | null = null
 	loading = false
+	query = ''
 	prepare({ page }: NullstackClientContext<HomeProps>) {
 		page.title = 'Hq Searcher'
 		page.description = 'Find HQ and export as PDF'
@@ -49,6 +50,7 @@ class Home extends Nullstack<HomeProps> {
 		if (!this.loading) {
 			this.loading = true
 			const { value } = event.target
+			this.query = value
 			try {
 				const inStoreArray = await this.getLocalStorageSearch()
 				const inStore = inStoreArray.find(item => item.query === value)
@@ -94,17 +96,27 @@ class Home extends Nullstack<HomeProps> {
 					</form>
 				</article>
 				<article class='text-white'>
-					<div class='grid lg:grid-cols-6 md:grid-cols-4 xl:gap-6 gap-4'>
-						{this.hqList.map(item => <CardItem
-							pages={item.pages}
-							name={item.name}
-							internalCode={item.internalCode}
-						/>)}
+					<div class='px-10 md:px-20'>
+						{this.query !== '' && (
+							<p class='color-gray-200 opacity-30'>Resultado para "{this.query}"</p>
+						)}
+						{this.hqList.length > 0 && (
+							<div class='grid lg:grid-cols-6 md:grid-cols-4 xl:gap-6 gap-4'>
+								{this.hqList.map(item => <CardItem
+									pages={item.pages}
+									name={item.name}
+									internalCode={item.internalCode}
+								/>)}
+							</div>
+						)}
+						{!this.loading && !this.hqList.length && (
+							<div class='flex align-center align-middle text-center justify-center h-[80vh]'>
+								<p class='self-center color-gray-200 opacity-30 text-xl md:text-5xl'>
+									{this.called ? 'Nenhum resultado encontrado' : 'Pesquise por algo'}
+								</p>
+							</div>
+						)}
 					</div>
-					{!this.loading && this.called && !this.hqList.length && (
-						<div>Nenhum resultado encontrado</div>
-					)}
-
 				</article>
 			</section>
 		)
