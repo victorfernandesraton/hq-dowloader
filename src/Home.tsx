@@ -45,12 +45,13 @@ class Home extends Nullstack<HomeProps> {
 
 		return (
 			<section class="w-full max-w-8xl min-h-screen p-6 flex-col justify-center">
-				<article class="w-full mb-5 px-20 flex-col justfy-center">
+				<article class="w-full mb-5 md:px-20 sm:px-2 flex-col justfy-center">
 					<form>
-						<div class="bg-white rounded shadow-xl h-12 w-xl">
+						<div class="bg-gray-900 rounded shadow-xss h-12 w-xl opacity-60">
 							<label for="query"></label>
 							<input
-								class='w-full h-full px-2'
+								placeholder='Digite algo para a buscar '
+								class='w-full h-full px-2 bg-transparent text-gray-300'
 								type="text"
 								id="query"
 								name="query"
@@ -60,12 +61,14 @@ class Home extends Nullstack<HomeProps> {
 						</div>
 					</form>
 				</article>
-				<article>
-					{this.hqList.map(item => <CardItem
-						pages={item.pages}
-						name={item.name}
-						internalCode={item.internalCode}
-					/>)}
+				<article class='text-white'>
+					<div class='grid lg:grid-cols-6 md:grid-cols-4 xl:gap-6 gap-4'>
+						{this.hqList.map(item => <CardItem
+							pages={item.pages}
+							name={item.name}
+							internalCode={item.internalCode}
+						/>)}
+					</div>
 					{!this.loading && this.called && !this.hqList.length && (
 						<div>Nenhum resultado encontrado</div>
 					)}

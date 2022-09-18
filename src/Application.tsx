@@ -24,7 +24,7 @@ class Application extends Nullstack {
 
 	render() {
 		return (
-			<body class="bg-gray-30 text-black font-roboto">
+			<body class="bg-gray-800 text-black font-roboto">
 				<Head />
 				<Home route="/" greeting="Welcome to Nullstack!" />
 			</body>

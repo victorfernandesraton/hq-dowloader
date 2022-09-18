@@ -6,6 +6,7 @@ import { parseTitle } from './utils'
 
 
 declare function ButtonDowload(): NullstackNode
+declare function ActionButton(): NullstackNode
 
 class CardItem extends Nullstack<HQInfo> {
 	showChapters = false
@@ -44,18 +45,31 @@ class CardItem extends Nullstack<HQInfo> {
 		)
 	}
 
+	renderActionButton({ children, onclick, ...rest }) {
+		return (
+			<button class='px-4 py-2 font-semibold text-sm bg-sky-500/75 text-white rounded-md shadow-sm opacity-100' onclick={onclick}
+				{...rest}
+			>
+				{children}
+			</button>
+		)
+	}
+
+
+
 	render({ name, pages = [], cover }: HQInfo) {
 		return (
-			<div>
-				<div>
-					<img src={cover ?? pages?.[0]?.pages?.[0]} width={219} />
+			<div class='w-full block rounded-b'>
+				<div class=''>
+					<img src={cover ?? pages?.[0]?.pages?.[0]} class='w-full block rounded-b' />
 				</div>
-				<p>
+				<p class='text-md sm:text-xs'>
 					{name}
 				</p>
 				{this.showChapters ? (
 					<div>
-						<button onclick={this.toggle}>Esconder</button>
+						<ActionButton
+							onclick={this.toggle}>Esconder</ActionButton>
 						{pages.map((chapter: Chapter, index: number) => (
 							<ButtonDowload
 								title={parseTitle({
@@ -68,7 +82,7 @@ class CardItem extends Nullstack<HQInfo> {
 						))}
 					</div>
 				) : (
-					<button onclick={this.toggle}>Listar capítulos</button>
+					<ActionButton onclick={this.toggle}>Listar capítulos</ActionButton>
 				)}
 			</div>
 		)
