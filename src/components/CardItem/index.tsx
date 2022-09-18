@@ -10,37 +10,46 @@ declare function ActionButton(): NullstackNode
 
 class CardItem extends Nullstack<HQInfo> {
 	showChapters = false
+	isLoading = false
+	currentDowload = 0
 
 	toggle() {
 		this.showChapters = !this.showChapters
 	}
 
 	async dowloadPdf(chapter: Chapter) {
-		const downloadLink = document.createElement('a')
-		downloadLink.target = '_blank'
-		downloadLink.download = 'name_to_give_saved_file.pdf'
-		const data = await generatePdf(chapter)
+		if (!this.isLoading) {
+			this.currentDowload = chapter.id
+			this.isLoading = true
+			const downloadLink = document.createElement('a')
+			downloadLink.target = '_blank'
+			downloadLink.download = 'name_to_give_saved_file.pdf'
+			const data = await generatePdf(chapter)
 
-		const blob = new Blob([data], {
-			type: 'application/pdf'
-		})
-		const url = URL.createObjectURL(blob)
+			const blob = new Blob([data], {
+				type: 'application/pdf'
+			})
+			const url = URL.createObjectURL(blob)
 
-		downloadLink.href = url
+			downloadLink.href = url
 
 
-		document.body.append(downloadLink)
+			document.body.append(downloadLink)
 
-		downloadLink.click()
+			downloadLink.click()
+			this.isLoading = false
+		}
 	}
 
-	renderButtonDowload({ chapter, title = '' }) {
+	renderButtonDowload({ chapter, title = '', disabled = false, ...rest }) {
 		return (
-			<div>
-				<p>{title}</p>
-				<button onclick={() => {
+			<div class='flex flex-row justify-between my-2 items-center'>
+				<div class='flex w-40'>
+					<p class="text-md sm:text-md">{title}</p>
+				</div>
+				<button class={`${disabled ? 'bg-green-200' : 'bg-green-700'} px-2 py-2 font-semibold text-sm text-white rounded-md shadow-sm opacity-100`} onclick={() => {
 					this.dowloadPdf(chapter)
-				}}>Baixar</button>
+				}} {...rest}>Baixar</button>
 			</div>
 		)
 	}
@@ -63,7 +72,7 @@ class CardItem extends Nullstack<HQInfo> {
 				<div class=''>
 					<img src={cover ?? pages?.[0]?.pages?.[0]} class='w-full block rounded-b' />
 				</div>
-				<p class='text-md sm:text-xs'>
+				<p class='text-xl sm:text-md'>
 					{name}
 				</p>
 				{this.showChapters ? (
@@ -77,6 +86,7 @@ class CardItem extends Nullstack<HQInfo> {
 									index: index + 1,
 									title: name
 								})}
+								disabled={this.isLoading && this.currentDowload == chapter.id}
 								chapter={chapter}
 							/>
 						))}
