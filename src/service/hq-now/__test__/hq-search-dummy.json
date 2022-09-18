@@ -7,11 +7,12 @@
 				"editoraId": 1,
 				"status": "Concluído",
 				"publisherName": "DC Comics",
-				"impressionsCount": 2726,
+				"impressionsCount": 2727,
 				"capitulos": [
 					{
 						"name": "Único",
 						"id": 29243,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/770203/The_Sandman_Special__2017__001-000.jpg"
@@ -140,11 +141,12 @@
 				"editoraId": 13,
 				"status": "Concluído",
 				"publisherName": "Vertigo",
-				"impressionsCount": 6124,
+				"impressionsCount": 6127,
 				"capitulos": [
 					{
 						"name": "Especial #1",
 						"id": 29556,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/778382/The_Sandman_Universe__2018-__001-000.jpg"
@@ -324,11 +326,12 @@
 				"editoraId": 13,
 				"status": "Concluído",
 				"publisherName": "Vertigo",
-				"impressionsCount": 1094884,
+				"impressionsCount": 1095426,
 				"capitulos": [
 					{
 						"name": "",
 						"id": 2620,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73328/Sandman.01.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -458,6 +461,7 @@
 					{
 						"name": "",
 						"id": 2621,
+						"number": "2",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73369/Sandman.02.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -542,6 +546,7 @@
 					{
 						"name": "",
 						"id": 2622,
+						"number": "3",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73395/Sandman.03.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -629,6 +634,7 @@
 					{
 						"name": "",
 						"id": 2623,
+						"number": "4",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73422/Sandman.04.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -713,6 +719,7 @@
 					{
 						"name": "",
 						"id": 2624,
+						"number": "5",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73448/Sandman.05.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -803,6 +810,7 @@
 					{
 						"name": "",
 						"id": 2625,
+						"number": "6",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73476/Sandman.06.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -887,6 +895,7 @@
 					{
 						"name": "",
 						"id": 2626,
+						"number": "7",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73502/Sandman.07.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -974,6 +983,7 @@
 					{
 						"name": "",
 						"id": 2627,
+						"number": "8",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73529/Sandman.08.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -1082,6 +1092,7 @@
 					{
 						"name": "",
 						"id": 2628,
+						"number": "9",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73563/Sandman.09.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -1163,6 +1174,7 @@
 					{
 						"name": "",
 						"id": 2629,
+						"number": "10",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73588/Sandman.10.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -1244,6 +1256,7 @@
 					{
 						"name": "",
 						"id": 2630,
+						"number": "11",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73613/Sandman.11.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -1325,6 +1338,7 @@
 					{
 						"name": "",
 						"id": 2631,
+						"number": "12",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73638/Sandman.12.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -1406,6 +1420,7 @@
 					{
 						"name": "",
 						"id": 2632,
+						"number": "13",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73663/Sem_titulo01.jpg"
@@ -1553,6 +1568,7 @@
 					{
 						"name": "",
 						"id": 2633,
+						"number": "14",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73710/Sandman.14.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -1637,6 +1653,7 @@
 					{
 						"name": "",
 						"id": 2634,
+						"number": "15",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73736/Sandman.15.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -1718,6 +1735,7 @@
 					{
 						"name": "",
 						"id": 2635,
+						"number": "16",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73761/Sandman.16.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -1799,6 +1817,7 @@
 					{
 						"name": "",
 						"id": 2636,
+						"number": "17",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73786/Sandman.17.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -1892,6 +1911,7 @@
 					{
 						"name": "",
 						"id": 2637,
+						"number": "18",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73815/Sandman.18.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -1976,6 +1996,7 @@
 					{
 						"name": "",
 						"id": 2638,
+						"number": "19",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73841/Sandman.19.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -2057,6 +2078,7 @@
 					{
 						"name": "",
 						"id": 2639,
+						"number": "20",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73866/Sandman.20.HQ.BR.17SET04.GibiHQ_01_0001.jpg"
@@ -2156,6 +2178,7 @@
 					{
 						"name": "",
 						"id": 2640,
+						"number": "21",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73897/Sandman.21.HQ.BR.09OUT04.GibiHQ_01_0001.jpg"
@@ -2258,6 +2281,7 @@
 					{
 						"name": "",
 						"id": 2641,
+						"number": "22",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73929/Sandman.22.HQ.BR.10OUT04.GibiHQ_01_0001.jpg"
@@ -2351,6 +2375,7 @@
 					{
 						"name": "",
 						"id": 2642,
+						"number": "23",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73958/Sandman.23.HQ.BR.11OUT04.GibiHQ_01_0001.jpg"
@@ -2441,6 +2466,7 @@
 					{
 						"name": "",
 						"id": 2643,
+						"number": "24",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/73986/Sandman.24.HQ.BR.12OUT04.GibiHQ_01_0001.jpg"
@@ -2534,6 +2560,7 @@
 					{
 						"name": "",
 						"id": 2644,
+						"number": "25",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74015/Sandman.25.HQ.BR.13OUT04.GibiHQ_01_0001.jpg"
@@ -2630,6 +2657,7 @@
 					{
 						"name": "",
 						"id": 2645,
+						"number": "26",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74045/Sandman.26.HQ.BR.14OUT04.GibiHQ_01_0001.jpg"
@@ -2726,6 +2754,7 @@
 					{
 						"name": "",
 						"id": 2646,
+						"number": "27",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74075/Sandman.27.HQ.BR.15OUT04.GibiHQ_01_0001.jpg"
@@ -2819,6 +2848,7 @@
 					{
 						"name": "",
 						"id": 2647,
+						"number": "28",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74104/Sandman.28.HQ.BR.16OUT04.GibiHQ_01_0001.jpg"
@@ -2912,6 +2942,7 @@
 					{
 						"name": "",
 						"id": 2648,
+						"number": "29",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74122/Sandman.29.HQ.BR.17OUT04.GibiHQ_01_0001.jpg"
@@ -3008,6 +3039,7 @@
 					{
 						"name": "",
 						"id": 2649,
+						"number": "30",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74163/Sandman.30.HQ.BR.18OUT04.GibiHQ_01_0001.jpg"
@@ -3104,6 +3136,7 @@
 					{
 						"name": "",
 						"id": 2650,
+						"number": "31",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74179/Sandman.31.HQ.BR.19OUT04.GibiHQ.pdf-000.jpg"
@@ -3200,6 +3233,7 @@
 					{
 						"name": "",
 						"id": 2651,
+						"number": "32",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74223/Sandman.32.HQ.BR.20OUT04.GibiHQ.pdf-000.jpg"
@@ -3305,6 +3339,7 @@
 					{
 						"name": "",
 						"id": 2652,
+						"number": "33",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74241/Sandman.33.HQ.BR.21OUT04.GibiHQ.pdf-000.jpg"
@@ -3401,6 +3436,7 @@
 					{
 						"name": "",
 						"id": 2653,
+						"number": "34",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74286/Sandman.34.HQ.BR.22OUT04.GibiHQ.pdf-000.jpg"
@@ -3491,6 +3527,7 @@
 					{
 						"name": "",
 						"id": 2654,
+						"number": "35",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74306/Sandman.35.HQ.BR.23OUT04.GibiHQ.pdf-000.jpg"
@@ -3587,6 +3624,7 @@
 					{
 						"name": "",
 						"id": 2655,
+						"number": "36",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74344/Sandman.36.HQ.BR.24OUT04.GibiHQ.pdf-000.jpg"
@@ -3740,6 +3778,7 @@
 					{
 						"name": "",
 						"id": 2656,
+						"number": "37",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74358/Sandman.37.HQ.BR.25OUT04.GibiHQ.pdf-000.jpg"
@@ -3836,6 +3875,7 @@
 					{
 						"name": "",
 						"id": 2657,
+						"number": "38",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74423/Sandman.38.HQ.BR.26OUT04.GibiHQ.pdf-000.jpg"
@@ -3932,6 +3972,7 @@
 					{
 						"name": "",
 						"id": 2658,
+						"number": "39",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74439/Sandman.39-000.jpg"
@@ -4019,6 +4060,7 @@
 					{
 						"name": "",
 						"id": 2659,
+						"number": "40",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74480/Sandman40-000.jpg"
@@ -4106,6 +4148,7 @@
 					{
 						"name": "",
 						"id": 2660,
+						"number": "41",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74502/Sandman.41.HQ.BR.29OUT04.GibiHQ.pdf-000.jpg"
@@ -4196,6 +4239,7 @@
 					{
 						"name": "",
 						"id": 2661,
+						"number": "42",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74535/Sandman.42.HQ.BR.30OUT04.GibiHQ.pdf-000.jpg"
@@ -4286,6 +4330,7 @@
 					{
 						"name": "",
 						"id": 2662,
+						"number": "43",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74554/Sandman.43.HQ.BR.31OUT04.GibiHQ.pdf-000.jpg"
@@ -4391,6 +4436,7 @@
 					{
 						"name": "",
 						"id": 2663,
+						"number": "44",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74596/Sandman.44.HQ.BR.01NOV04.GibiHQ.pdf-000.jpg"
@@ -4481,6 +4527,7 @@
 					{
 						"name": "",
 						"id": 2664,
+						"number": "45",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74624/Sandman.45.HQ.BR.02NOV04.GibiHQ.pdf-000.jpg"
@@ -4586,6 +4633,7 @@
 					{
 						"name": "",
 						"id": 2665,
+						"number": "46",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74657/Sandman.46.HQ.BR.03NOV04.GibiHQ.pdf-000.jpg"
@@ -4691,6 +4739,7 @@
 					{
 						"name": "",
 						"id": 2666,
+						"number": "47",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74690/Sandman.47.HQ.BR.04NOV04.GibiHQ.pdf-000.jpg"
@@ -4781,6 +4830,7 @@
 					{
 						"name": "",
 						"id": 2667,
+						"number": "48",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74718/Sandman.48.HQ.BR.05NOV04.GibiHQ.pdf-000.jpg"
@@ -4868,6 +4918,7 @@
 					{
 						"name": "",
 						"id": 2668,
+						"number": "49",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74745/Sandman.49.HQ.BR.06NOV04.GibiHQ.pdf-000.jpg"
@@ -4970,6 +5021,7 @@
 					{
 						"name": "",
 						"id": 2669,
+						"number": "50",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74777/Sandman.50.HQ.BR.07NOV04.GibiHQ.pdf-000.jpg"
@@ -5081,6 +5133,7 @@
 					{
 						"name": "",
 						"id": 2670,
+						"number": "51",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74812/Sandman.51.HQ.BR.08NOV04.GibiHQ.pdf-000.jpg"
@@ -5192,6 +5245,7 @@
 					{
 						"name": "",
 						"id": 2671,
+						"number": "52",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74847/Sandman.52.HQ.BR.09NOV04.GibiHQ.pdf-000.jpg"
@@ -5282,6 +5336,7 @@
 					{
 						"name": "",
 						"id": 2672,
+						"number": "53",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74875/Sandman.53.HQ.BR.10NOV04.GibiHQ.pdf-000.jpg"
@@ -5369,6 +5424,7 @@
 					{
 						"name": "",
 						"id": 2673,
+						"number": "54",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74902/Sandman__54_pg_00.jpg"
@@ -5459,6 +5515,7 @@
 					{
 						"name": "",
 						"id": 2674,
+						"number": "55",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74930/Sandman.55.HQ.BR.12NOV04.GibiHQ.pdf-000.jpg"
@@ -5570,6 +5627,7 @@
 					{
 						"name": "",
 						"id": 2675,
+						"number": "56",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74965/Sandman.56.HQ.BR.13NOV04.GibiHQ.pdf-000.jpg"
@@ -5651,6 +5709,7 @@
 					{
 						"name": "",
 						"id": 2676,
+						"number": "57",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/74990/Sandman.57.HQ.BR.14NOV04.GibiHQ.pdf-000.jpg"
@@ -5762,6 +5821,7 @@
 					{
 						"name": "",
 						"id": 2677,
+						"number": "58",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75025/Sandman.58.HQ.BR.15NOV04.GibiHQ.pdf-000.jpg"
@@ -5873,6 +5933,7 @@
 					{
 						"name": "",
 						"id": 2678,
+						"number": "59",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75060/Sandman.59.HQ.BR.16NOV04.GibiHQ.pdf-000.jpg"
@@ -5963,6 +6024,7 @@
 					{
 						"name": "",
 						"id": 2679,
+						"number": "60",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75088/Sandman.60.HQ.BR.17NOV04.GibiHQ.pdf-000.jpg"
@@ -6053,6 +6115,7 @@
 					{
 						"name": "",
 						"id": 2680,
+						"number": "61",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75116/Sandman.61.HQ.BR.18NOV04.GibiHQ.pdf-000.jpg"
@@ -6143,6 +6206,7 @@
 					{
 						"name": "",
 						"id": 2681,
+						"number": "62",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75144/Sandman.62.HQ.BR.19NOV04.GibiHQ.pdf-000.jpg"
@@ -6233,6 +6297,7 @@
 					{
 						"name": "",
 						"id": 2682,
+						"number": "63",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75172/Sandman.63.HQ.BR.20NOV04.GibiHQ.pdf-000.jpg"
@@ -6320,6 +6385,7 @@
 					{
 						"name": "",
 						"id": 2683,
+						"number": "64",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75199/Sandman.64.HQ.BR.21NOV04.GibiHQ.pdf-000.jpg"
@@ -6407,6 +6473,7 @@
 					{
 						"name": "",
 						"id": 2684,
+						"number": "65",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75226/Sandman.65.HQ.BR.22NOV04.GibiHQ.pdf-000.jpg"
@@ -6494,6 +6561,7 @@
 					{
 						"name": "",
 						"id": 2685,
+						"number": "66",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75253/Sandman.66.HQ.BR.23NOV04.GibiHQ.pdf-000.jpg"
@@ -6581,6 +6649,7 @@
 					{
 						"name": "",
 						"id": 2686,
+						"number": "67",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75280/Sandman.67.HQ.BR.24NOV04.GibiHQ.pdf-000.jpg"
@@ -6668,6 +6737,7 @@
 					{
 						"name": "",
 						"id": 2687,
+						"number": "68",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75307/Sandman.68.HQ.BR.25NOV04.GibiHQ.pdf-000.jpg"
@@ -6758,6 +6828,7 @@
 					{
 						"name": "",
 						"id": 2688,
+						"number": "69",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75335/Sandman.69.HQ.BR.26NOV04.GibiHQ.pdf-000.jpg"
@@ -6845,6 +6916,7 @@
 					{
 						"name": "",
 						"id": 2689,
+						"number": "70",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75362/Sandman.70.HQ.BR.27NOV04.GibiHQ.pdf-000.jpg"
@@ -6935,6 +7007,7 @@
 					{
 						"name": "",
 						"id": 2690,
+						"number": "71",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75390/Sandman.71.HQ.BR.28NOV04.GibiHQ.pdf-000.jpg"
@@ -7022,6 +7095,7 @@
 					{
 						"name": "",
 						"id": 2691,
+						"number": "72",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75417/Sandman.72.HQ.BR.29NOV04.GibiHQ.pdf-000.jpg"
@@ -7109,6 +7183,7 @@
 					{
 						"name": "",
 						"id": 2692,
+						"number": "73",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75444/Sandman.73.HQ.BR.30NOV04.GibiHQ.pdf-000.jpg"
@@ -7196,6 +7271,7 @@
 					{
 						"name": "",
 						"id": 2693,
+						"number": "74",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75471/Sandman.74.HQ.BR.01DEZ04.GibiHQ.pdf-000.jpg"
@@ -7280,6 +7356,7 @@
 					{
 						"name": "",
 						"id": 2694,
+						"number": "75",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/75497/Sandman.75.HQ.BR.02DEZ04.GibiHQ.pdf-000.jpg"
@@ -7438,11 +7515,12 @@
 				"editoraId": 13,
 				"status": "Concluído",
 				"publisherName": "Vertigo",
-				"impressionsCount": 10063,
+				"impressionsCount": 10065,
 				"capitulos": [
 					{
 						"name": "Único",
 						"id": 1313,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/34434/the-furies-001.jpg"
@@ -7733,11 +7811,12 @@
 				"editoraId": 13,
 				"status": "Concluído",
 				"publisherName": "Vertigo",
-				"impressionsCount": 10091,
+				"impressionsCount": 10093,
 				"capitulos": [
 					{
 						"name": "Único",
 						"id": 5124,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/140849/000a.jpg"
@@ -7944,11 +8023,12 @@
 				"editoraId": 13,
 				"status": "Concluído",
 				"publisherName": "Vertigo",
-				"impressionsCount": 3785,
+				"impressionsCount": 3786,
 				"capitulos": [
 					{
 						"name": "Único",
 						"id": 8645,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/227275/000a.jpg"
@@ -8142,6 +8222,7 @@
 					{
 						"name": "Único",
 						"id": 10699,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/282873/001.jpg"
@@ -8258,11 +8339,12 @@
 				"editoraId": 13,
 				"status": "Concluído",
 				"publisherName": "Vertigo",
-				"impressionsCount": 929,
+				"impressionsCount": 932,
 				"capitulos": [
 					{
 						"name": "Único",
 						"id": 33254,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/885515/Destino_001.jpg"
@@ -8747,6 +8829,7 @@
 					{
 						"name": "",
 						"id": 11013,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/290343/00a.JPG"
@@ -8831,6 +8914,7 @@
 					{
 						"name": "",
 						"id": 11014,
+						"number": "2",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/290356/00a.JPG"
@@ -8915,6 +8999,7 @@
 					{
 						"name": "",
 						"id": 11015,
+						"number": "3",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/290374/00a.JPG"
@@ -9006,6 +9091,7 @@
 					{
 						"name": "",
 						"id": 11037,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/290897/cp01.jpg"
@@ -9084,6 +9170,7 @@
 					{
 						"name": "",
 						"id": 11038,
+						"number": "2",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/290920/cp01.jpg"
@@ -9159,6 +9246,7 @@
 					{
 						"name": "",
 						"id": 11039,
+						"number": "3",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/290944/cp01.jpg"
@@ -9244,6 +9332,7 @@
 					{
 						"name": "Único",
 						"id": 11040,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/290967/Tudo_sobre_sonho...-00.jpg"
@@ -9377,6 +9466,7 @@
 					{
 						"name": "",
 						"id": 11133,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/300383/0001_0000.jpg"
@@ -9449,6 +9539,7 @@
 					{
 						"name": "",
 						"id": 11134,
+						"number": "2",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/300391/RacerX-SMT02-p01.jpg"
@@ -9524,6 +9615,7 @@
 					{
 						"name": "",
 						"id": 11135,
+						"number": "3",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/300398/RacerX-SMT03-p01.jpg"
@@ -9599,6 +9691,7 @@
 					{
 						"name": "",
 						"id": 11136,
+						"number": "4",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/300408/000.jpg"
@@ -9671,6 +9764,7 @@
 					{
 						"name": "",
 						"id": 11137,
+						"number": "5",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/300415/0001_0000.jpg"
@@ -9756,6 +9850,7 @@
 					{
 						"name": "Volume 1",
 						"id": 11256,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/304052/Digitalizar0001.jpg"
@@ -10095,6 +10190,7 @@
 					{
 						"name": "Volume 2",
 						"id": 11257,
+						"number": "2",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/304108/Digitalizar0001.jpg"
@@ -10444,6 +10540,7 @@
 					{
 						"name": "",
 						"id": 11050,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/291204/Sandman-_001.jpg"
@@ -10555,6 +10652,7 @@
 					{
 						"name": "",
 						"id": 11051,
+						"number": "2",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/291219/00.jpg"
@@ -10660,6 +10758,7 @@
 					{
 						"name": "",
 						"id": 11052,
+						"number": "3",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/291227/00.jpg"
@@ -10765,6 +10864,7 @@
 					{
 						"name": "",
 						"id": 11053,
+						"number": "4",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/291252/01.jpg"
@@ -10875,11 +10975,12 @@
 				"editoraId": 13,
 				"status": "Concluído",
 				"publisherName": "Vertigo",
-				"impressionsCount": 12961,
+				"impressionsCount": 12962,
 				"capitulos": [
 					{
 						"name": "Único",
 						"id": 11054,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/291338/Sandman_-_Noites_Sem_Fim-000.jpg"
@@ -11350,11 +11451,12 @@
 				"editoraId": 13,
 				"status": "Concluído",
 				"publisherName": "Vertigo",
-				"impressionsCount": 7219,
+				"impressionsCount": 7223,
 				"capitulos": [
 					{
 						"name": "Único",
 						"id": 11158,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/301932/Sandman_-_Orpheus-000.jpg"
@@ -11560,6 +11662,7 @@
 					{
 						"name": "",
 						"id": 16192,
+						"number": "1",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/431284/000.jpg"
@@ -11713,6 +11816,7 @@
 					{
 						"name": "",
 						"id": 16193,
+						"number": "2",
 						"pictures": [
 							{
 								"pictureUrl": "http://static.hq-now.com/hqs/hqs/uploads/picture/image/431333/000.jpg"

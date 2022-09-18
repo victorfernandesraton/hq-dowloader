@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1663433238016" clover="3.2.0">
-  <project timestamp="1663433238017" name="All files">
+<coverage generated="1663469873490" clover="3.2.0">
+  <project timestamp="1663469873490" name="All files">
     <metrics statements="21" coveredstatements="15" conditionals="1" coveredconditionals="0" methods="6" coveredmethods="3" elements="28" coveredelements="18" complexity="0" loc="21" ncloc="21" packages="1" files="2" classes="2"/>
     <file name="api.ts" path="/home/victorraton/www/hq-dowloader/src/service/hq-now/api.ts">
       <metrics statements="3" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -13,21 +13,21 @@
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
-      <line num="25" count="1" type="stmt"/>
-      <line num="44" count="1" type="stmt"/>
-      <line num="45" count="0" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="48" count="1" type="stmt"/>
       <line num="49" count="0" type="stmt"/>
-      <line num="55" count="0" type="stmt"/>
-      <line num="56" count="0" type="stmt"/>
-      <line num="59" count="1" type="stmt"/>
-      <line num="60" count="1" type="stmt"/>
-      <line num="61" count="17" type="stmt"/>
-      <line num="62" count="17" type="stmt"/>
-      <line num="63" count="104" type="stmt"/>
-      <line num="64" count="104" type="stmt"/>
-      <line num="65" count="3690" type="stmt"/>
+      <line num="53" count="0" type="stmt"/>
+      <line num="59" count="0" type="stmt"/>
+      <line num="60" count="0" type="stmt"/>
+      <line num="63" count="1" type="stmt"/>
+      <line num="64" count="1" type="stmt"/>
+      <line num="65" count="17" type="stmt"/>
+      <line num="66" count="17" type="stmt"/>
+      <line num="67" count="104" type="stmt"/>
       <line num="68" count="104" type="stmt"/>
-      <line num="74" count="17" type="stmt"/>
+      <line num="69" count="3690" type="stmt"/>
+      <line num="72" count="104" type="stmt"/>
+      <line num="79" count="17" type="stmt"/>
     </file>
   </project>
 </coverage>

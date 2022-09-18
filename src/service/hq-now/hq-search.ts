@@ -72,7 +72,8 @@ export const parseResult = (data: HqSearchResponse[]) => {
 			chapters.push({
 				id: chapterItem.id,
 				name: chapterItem.name,
-				pages
+				number: chapterItem.number,
+				pages,
 			})
 		}
 		return {
