@@ -17,7 +17,7 @@
 	},
 	"scripts": {
 		"start": "npx nullstack start",
-		"build": "npx nullstack build",
+		"build": "npx nullstack build --mode=spa --output=spa",
 		"test": "jest"
 	},
 	"dependencies": {
