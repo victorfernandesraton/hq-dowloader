@@ -1,5 +1,4 @@
 import Nullstack, {
-	FormEvent,
 	NullstackClientContext,
 } from 'nullstack'
 import { HQInfo } from './types/hqinfo.type'
@@ -11,7 +10,7 @@ interface HomeProps {
 }
 
 type OnSearchProps = {
-	event: FormEvent<HTMLInputElement>
+	event: HTMLFormElement
 }
 
 class Home extends Nullstack<HomeProps> {
@@ -47,9 +46,11 @@ class Home extends Nullstack<HomeProps> {
 	}
 
 	async onSearch({ event }: OnSearchProps) {
+		event.preventDefault()
 		if (!this.loading) {
+			const formData = new FormData(event.target)
 			this.loading = true
-			const { value } = event.target
+			const value = formData.get('query').toString()
 			this.query = value
 			try {
 				const inStoreArray = await this.getLocalStorageSearch()
@@ -80,18 +81,25 @@ class Home extends Nullstack<HomeProps> {
 		return (
 			<section class="w-full max-w-8xl min-h-screen p-6 flex-col justify-center">
 				<article class="w-full mb-5 md:px-20 sm:px-2 flex-col justfy-center">
-					<form>
-						<div class="bg-gray-900 rounded shadow-xss h-12 w-xl opacity-60">
-							<label for="query"></label>
-							<input
-								placeholder='Digite algo para a buscar '
-								class='w-full h-full px-2 bg-transparent text-gray-300'
-								type="text"
-								id="query"
-								name="query"
-								oninput={this.onSearch}
-								debounce={500}
-							/>
+					<form onsubmit={this.onSearch}>
+						<div class='flex flex-row justify-evenly w-full'>
+							<div class="bg-gray-900 mr-2 rounded shadow-xss h-12 w-full opacity-60">
+								<label for="query"></label>
+								<input
+									placeholder='Digite algo para a buscar '
+									class='w-full h-full px-4 bg-transparent text-gray-300'
+									type="text"
+									id="query"
+									name="query"
+								/>
+							</div>
+							<button
+								type="submit"
+								disabled={this.loading}
+								class="width-auto height-full  px-2 border border-gray-700 bg-sky-500 text-white rounded shadow-xss h-12 w-xl transition duration-500 ease select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline"
+							>
+								{this.loading ? 'Enviado..' : 'Enviar'}
+							</button>
 						</div>
 					</form>
 				</article>
