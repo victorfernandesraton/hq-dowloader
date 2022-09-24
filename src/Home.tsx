@@ -80,10 +80,10 @@ class Home extends Nullstack<HomeProps> {
 
 		return (
 			<section class="w-full max-w-8xl min-h-screen p-6 flex-col justify-center">
-				<article class="w-full mb-5 md:px-20 sm:px-2 flex-col justfy-center">
+				<article class="w-full mb-5 md:px-20 sm:px-2 flex-col justfy-center text-xs xl:text-xl">
 					<form onsubmit={this.onSearch}>
-						<div class='flex flex-row justify-evenly w-full'>
-							<div class="bg-gray-900 mr-2 rounded shadow-xss h-12 w-full opacity-60">
+						<div class='flex flex-row justify-evenly w-full h-8 xl:h-12'>
+							<div class="bg-gray-900 mr-2 rounded shadow-xss w-full opacity-60">
 								<label for="query"></label>
 								<input
 									placeholder='Digite algo para a buscar '
@@ -96,7 +96,7 @@ class Home extends Nullstack<HomeProps> {
 							<button
 								type="submit"
 								disabled={this.loading}
-								class="width-auto height-full  px-2 border border-gray-700 bg-sky-500 text-white rounded shadow-xss h-12 w-xl transition duration-500 ease select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline"
+								class="width-auto h-8 xl:h-12 px-2 border border-gray-700 bg-sky-500 text-white rounded shadow-xss h-12 w-xl transition duration-500 ease select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline"
 							>
 								{this.loading ? 'Enviado..' : 'Enviar'}
 							</button>
