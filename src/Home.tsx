@@ -20,8 +20,8 @@ class Home extends Nullstack<HomeProps> {
 	loading = false
 	query = ''
 	prepare({ page }: NullstackClientContext<HomeProps>) {
-		page.title = 'Hq Searcher'
-		page.description = 'Find HQ and export as PDF'
+		page.title = 'Hqis - Busque seus HQs'
+		page.description = 'Encontre seus HQ\'s favoritos e baixe em PDF'
 	}
 
 
@@ -96,7 +96,7 @@ class Home extends Nullstack<HomeProps> {
 							<button
 								type="submit"
 								disabled={this.loading}
-								class="width-auto h-8 xl:h-12 px-2 border border-gray-700 bg-sky-500 text-white rounded shadow-xss h-12 w-xl transition duration-500 ease select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline"
+								class="width-auto h-8 xl:h-12 px-2 border border-gray-700 bg-sky-500 text-white rounded shadow-xss transition duration-500 ease select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline"
 							>
 								{this.loading ? 'Enviado..' : 'Enviar'}
 							</button>

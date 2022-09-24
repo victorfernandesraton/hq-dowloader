@@ -5,24 +5,28 @@ self.context = {
     "development": false,
     "production": true,
     "mode": "spa",
-    "key": "d3dc5a6320b8f4d0b36bf10f817fc945d3b157b6",
+    "key": "c0d994c0be5632b2b66e713a7a4d1bdc7f71c5a4",
     "name": ""
   },
   "project": {
-    "domain": "localhost",
-    "name": "Hq Dowloader - Dowload pdf hqs from hqnow",
-    "shortName": "HqDowloader",
-    "color": "#D22365",
+    "name": "Hqist - Dowload pdf hqs from hqnow",
+    "shortName": "Hqist",
+    "color": "#0a355c",
     "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
     "type": "website",
-    "display": "standalone",
+    "display": "fullscreen",
     "orientation": "portrait",
     "scope": "/",
     "root": "/",
     "sitemap": false,
-    "favicon": "/favicon-96x96.png",
+    "favicon": "/favicon.ico",
     "disallow": [],
-    "icons": {}
+    "icons": {
+      "72": "/favicon-72x72.png",
+      "128": "/favicon-128x128.png",
+      "512": "/favicon-512x512.png"
+    },
+    "backgroundColor": "#0a355c"
   },
   "settings": {},
   "worker": {

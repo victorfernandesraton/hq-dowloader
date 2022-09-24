@@ -7,7 +7,7 @@ declare function Head(): NullstackNode
 class Application extends Nullstack {
 
 	prepare({ page }: NullstackClientContext) {
-		page.locale = 'en-US'
+		page.locale = 'pt-BR'
 	}
 
 	renderHead() {
@@ -18,6 +18,9 @@ class Application extends Nullstack {
 				<link
 					href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto&display=swap"
 					rel="stylesheet" />
+				<link rel="apple-touch-icon" href="/apple-touch-icon.png.png"></link>
+				<meta name="theme-color" content="#0a355c" />
+
 			</head>
 		)
 	}
@@ -26,7 +29,7 @@ class Application extends Nullstack {
 		return (
 			<body class="bg-gray-800 text-black font-roboto">
 				<Head />
-				<Home route="/" greeting="Welcome to Nullstack!" />
+				<Home route="/" greeting="Seja bem-vindo ao Hqist!" />
 			</body>
 		)
 	}
