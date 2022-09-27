@@ -19,7 +19,7 @@ class Application extends Nullstack {
 				<link
 					href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto&display=swap"
 					rel="stylesheet" />
-				<link rel="apple-touch-icon" href="/apple-touch-icon.png.png"></link>
+				<link rel="apple-touch-icon" href="apple-touch-icon.png.png"></link>
 				<meta name="theme-color" content="#0a355c" />
 
 			</head>
