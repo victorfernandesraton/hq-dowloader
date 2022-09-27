@@ -31,7 +31,7 @@ class Application extends Nullstack {
 			<body class="bg-gray-800 text-black font-roboto">
 				<Head />
 				<Installer />
-				<Home route="/" greeting="Seja bem-vindo ao Hqist!" />
+				<Home route="/" />
 			</body>
 		)
 	}

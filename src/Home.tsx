@@ -4,9 +4,10 @@ import Nullstack, {
 import { HQInfo } from './types/hqinfo.type'
 import { getHqsService } from './service/hq-now/hq-search'
 import CardItem from './components/CardItem'
+import { ShareButton } from './components/shareButton'
 
 interface HomeProps {
-	params: {
+	params?: {
 		query?: string
 	}
 }
@@ -109,6 +110,9 @@ class Home extends Nullstack<HomeProps> {
 									name="query"
 								/>
 							</div>
+							{this.hqList.length > 0 && (
+								<ShareButton query={this.query} disabled={this.loading} />
+							)}
 							<button
 								type="submit"
 								disabled={this.loading}
