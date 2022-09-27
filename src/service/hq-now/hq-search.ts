@@ -46,13 +46,15 @@ query getHqsByName($name: String!) {
 }`
 
 export const getHqsService = async (query: string, signal?: AbortSignal): Promise<HQInfo[]> => {
-	const body = {
+	const objectData = {
 		operationName: 'getHqsByName', variables: { name: query },
 		query: print(GET_HEQ_QUERY),
 	}
+
+	console.log(objectData)
 	const response = await request({
 		method: 'POST',
-		body: JSON.stringify(body),
+		body: JSON.stringify(objectData),
 		signal,
 	})
 

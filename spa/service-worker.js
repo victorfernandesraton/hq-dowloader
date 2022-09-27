@@ -5,7 +5,7 @@ self.context = {
     "development": false,
     "production": true,
     "mode": "spa",
-    "key": "2ccdf818bdaf45cdf6c83c3850296a322cf82546",
+    "key": "2d3083e7282b30578a43765869e767dc7f9233f4",
     "name": ""
   },
   "project": {
@@ -14,7 +14,7 @@ self.context = {
     "color": "#0a355c",
     "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
     "type": "website",
-    "display": "fullscreen",
+    "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
     "root": "/",

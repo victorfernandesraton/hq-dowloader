@@ -1,5 +1,6 @@
 import Nullstack, { NullstackClientContext, NullstackNode } from 'nullstack'
 import '../tailwind.css'
+import Installer from './components/installer'
 import Home from './Home'
 
 declare function Head(): NullstackNode
@@ -29,6 +30,7 @@ class Application extends Nullstack {
 		return (
 			<body class="bg-gray-800 text-black font-roboto">
 				<Head />
+				<Installer />
 				<Home route="/" greeting="Seja bem-vindo ao Hqist!" />
 			</body>
 		)

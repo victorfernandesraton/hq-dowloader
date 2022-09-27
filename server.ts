@@ -13,9 +13,8 @@ context.start = async function start() {
 	project.favicon = '/favicon.ico'
 	project.color = '#0a355c'
 	project.backgroundColor = '#0a355c'
-	project.display = 'fullscreen'
+	project.display = 'standalone'
 	project.root = '/'
-	// https://nullstack.app/application-startup
 }
 
 export default context

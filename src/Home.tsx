@@ -6,7 +6,9 @@ import { getHqsService } from './service/hq-now/hq-search'
 import CardItem from './components/CardItem'
 
 interface HomeProps {
-	greeting: string;
+	params: {
+		query?: string
+	}
 }
 
 type OnSearchProps = {
@@ -19,18 +21,19 @@ class Home extends Nullstack<HomeProps> {
 	error: Error | null = null
 	loading = false
 	query = ''
+
 	prepare({ page }: NullstackClientContext<HomeProps>) {
-		page.title = 'Hqis - Busque seus HQs'
+		page.title = 'Hqist - HQ\'s traduzidos em PDF'
 		page.description = 'Encontre seus HQ\'s favoritos e baixe em PDF'
 	}
 
 
-	getLocalStorageSearch(): Array<{ query: string, value: HQInfo[] }> {
+	async storeForSearch(): Promise<Array<{ query: string, value: HQInfo[] }>> {
 		return JSON.parse(localStorage.getItem('query-history')) ?? []
 	}
 
 	async saveData({ query, data = [] }) {
-		const history = await this.getLocalStorageSearch()
+		const history = await this.storeForSearch()
 		if (history) {
 			if (history.length > 5) {
 				history.shift()
@@ -45,6 +48,29 @@ class Home extends Nullstack<HomeProps> {
 		return
 	}
 
+	async _executeSearch(value: string) {
+		try {
+			const inStoreArray = await this.storeForSearch()
+			const inStore = inStoreArray.find(item => item.query === value)
+			if (inStore) {
+				this.hqList = inStore.value
+				return
+			} else {
+				const data = await getHqsService(value)
+				await this.saveData({ query: value, data })
+				this.hqList = data
+				return
+			}
+		} catch (error) {
+			console.log(error)
+			this.error = error
+		} finally {
+			this.loading = false
+			this.called = true
+		}
+	}
+
+
 	async onSearch({ event }: OnSearchProps) {
 		event.preventDefault()
 		if (!this.loading) {
@@ -52,27 +78,16 @@ class Home extends Nullstack<HomeProps> {
 			this.loading = true
 			const value = formData.get('query').toString()
 			this.query = value
-			try {
-				const inStoreArray = await this.getLocalStorageSearch()
-				const inStore = inStoreArray.find(item => item.query === value)
-				console.log(inStore)
-				if (inStore) {
-					console.log(inStore.query, inStore.value)
-					this.hqList = inStore.value
-					return
-				} else {
-					const data = await getHqsService(value)
-					await this.saveData({ query: value, data })
-					this.hqList = data
-					return
-				}
-			} catch (error) {
-				console.log(error)
-				this.error = error
-			} finally {
-				this.loading = false
-				this.called = true
-			}
+			await this._executeSearch(value)
+		}
+	}
+
+
+	async initiate({ params }: NullstackClientContext<HomeProps>) {
+		if (!this.loading && params.query) {
+			const value = params.query
+			this.query = value
+			await this._executeSearch(value)
 		}
 	}
 
@@ -90,6 +105,7 @@ class Home extends Nullstack<HomeProps> {
 									class='w-full h-full px-4 bg-transparent text-gray-300'
 									type="text"
 									id="query"
+									value={this.query}
 									name="query"
 								/>
 							</div>
