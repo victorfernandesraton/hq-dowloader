@@ -48,7 +48,7 @@ class Installer extends Nullstack {
 									type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-sky-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm">Instalar</button>
 								<button
 									onclick={() => {
-										this.hidden = false
+										this.hidden = true
 									}}
 									type="button" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-gray px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">Agora não</button>
 							</div>
