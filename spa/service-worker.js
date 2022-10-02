@@ -5,13 +5,13 @@ self.context = {
     "development": false,
     "production": true,
     "mode": "spa",
-    "key": "f68b1af3008c71f783f4ce16c160073fc621e614",
+    "key": "6681896153cb2449de51013b8b40c5bb60f03689",
     "name": ""
   },
   "project": {
     "name": "Hqist - Dowload pdf hqs from hqnow",
     "shortName": "Hqist",
-    "color": "#0a355c",
+    "color": "#202A37",
     "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
     "type": "website",
     "display": "standalone",
@@ -26,7 +26,7 @@ self.context = {
       "128": "/favicon-128x128.png",
       "512": "/favicon-512x512.png"
     },
-    "backgroundColor": "#0a355c"
+    "backgroundColor": "#202A37"
   },
   "settings": {},
   "worker": {
