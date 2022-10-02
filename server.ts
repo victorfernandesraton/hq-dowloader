@@ -11,8 +11,8 @@ context.start = async function start() {
 		'512': '/favicon-512x512.png'
 	}
 	project.favicon = '/favicon.ico'
-	project.color = '#0a355c'
-	project.backgroundColor = '#0a355c'
+	project.color = '#202A37'
+	project.backgroundColor = '#202A37'
 	project.display = 'standalone'
 	project.root = '/'
 }

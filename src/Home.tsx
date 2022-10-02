@@ -129,7 +129,7 @@ class Home extends Nullstack<HomeProps> {
 							<p class='color-gray-200 opacity-30'>Resultado para "{this.query}"</p>
 						)}
 						{this.hqList.length > 0 && (
-							<div class='grid lg:grid-cols-6 md:grid-cols-4 xl:gap-6 gap-4'>
+							<div class='grid lg:grid-cols-6 md:grid-cols-4 xl:gap-6 gap-4 grid-flow-dense	'>
 								{this.hqList.map(item => <CardItem
 									pages={item.pages}
 									name={item.name}
