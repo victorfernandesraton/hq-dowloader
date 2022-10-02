@@ -2,6 +2,7 @@ import Nullstack, { NullstackNode } from 'nullstack'
 import { generatePdf } from '../../service/pdf/generate-pdf'
 import { Chapter } from '../../types/chapter'
 import { HQInfo } from '../../types/hqinfo.type'
+import Modal from '../modal'
 import { parseTitle } from './utils'
 
 
@@ -80,20 +81,25 @@ class CardItem extends Nullstack<HQInfo> {
 				</div>
 				<ActionButton onclick={this.toggle}>{this.showChapters ? 'Esconder' : 'Mostrar'}</ActionButton>
 				{this.showChapters && (
-					<div>
-						{pages.map((chapter: Chapter, index: number) => (
-							<ButtonDowload
-								title={parseTitle({
-									chapter,
-									index: index + 1,
-									title: name
-								})}
-								onClose={() => this.toggle}
-								disabled={this.isLoading && this.currentDowload == chapter.id}
-								chapter={chapter}
-							/>
-						))}
-					</div>
+					<Modal
+						onClose={this.toggle}
+						title={name}
+					>
+						<div class='max-h-80'>
+							{pages.map((chapter: Chapter, index: number) => (
+								<ButtonDowload
+									title={parseTitle({
+										chapter,
+										index: index + 1,
+										title: name
+									})}
+									onClose={() => this.toggle}
+									disabled={this.isLoading && this.currentDowload == chapter.id}
+									chapter={chapter}
+								/>
+							))}
+						</div>
+					</Modal>
 				)
 				}
 
