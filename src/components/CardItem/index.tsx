@@ -18,13 +18,13 @@ class CardItem extends Nullstack<HQInfo> {
 		this.showChapters = !this.showChapters
 	}
 
-	async dowloadPdf(chapter: Chapter) {
+	async _dowloadPdf(chapter: Chapter, title?: string): Promise<void> {
 		if (!this.isLoading) {
 			this.currentDowload = chapter.id
 			this.isLoading = true
 			const downloadLink = document.createElement('a')
 			downloadLink.target = '_blank'
-			downloadLink.download = `${chapter.name ?? chapter.id ?? chapter.number}`
+			downloadLink.download = `${title ?? chapter.name ?? chapter.id ?? chapter.number}`
 			const data = await generatePdf(chapter)
 
 			const blob = new Blob([data], {
@@ -50,9 +50,11 @@ class CardItem extends Nullstack<HQInfo> {
 				<div class='flex w-40'>
 					<p class="text-sm">{title}</p>
 				</div>
-				<button class={`${disabled ? 'bg-green-200' : 'bg-green-700'} px-2 py-2 font-semibold text-sm text-white rounded-md shadow-sm opacity-100`} onclick={() => {
-					this.dowloadPdf(chapter)
-				}} {...rest}>Baixar</button>
+				<a
+					download={`${title}.pdf`}
+					class={`${disabled ? 'bg-green-200' : 'bg-green-700'} px-2 py-2 font-semibold text-sm text-white rounded-md shadow-sm opacity-100`} onclick={() => {
+						this._dowloadPdf(chapter, title)
+					}} {...rest}>Baixar</a>
 			</div>
 
 		)
@@ -73,13 +75,15 @@ class CardItem extends Nullstack<HQInfo> {
 	render({ name, pages = [], cover }: HQInfo) {
 		return (
 			<div class='w-full rounded-b'>
-				<div class='w-full h-64'>
-					<img src={cover ?? pages?.[0]?.pages?.[0]} class='w-full block rounded-b object-cover h-full' />
+				<div class='w-full xl:h-64 md:h-48 sm:h-64 h-64'>
+					<img src={cover ?? pages?.[0]?.pages?.[0]} class='w-full block rounded-b object-cover h-full'
+						loading='lazy'
+					/>
 				</div>
 				<div class='flex break-all h-12 text-sm overflow-hidden text-ellipsis flex-wrap'>
 					{name}
 				</div>
-				<ActionButton onclick={this.toggle}>{this.showChapters ? 'Esconder' : 'Mostrar'}</ActionButton>
+				<ActionButton onclick={this.toggle} disabled={this.isLoading}>Listar capítulos</ActionButton>
 				{this.showChapters && (
 					<Modal
 						onClose={this.toggle}
@@ -100,9 +104,7 @@ class CardItem extends Nullstack<HQInfo> {
 							))}
 						</div>
 					</Modal>
-				)
-				}
-
+				)}
 			</div>
 		)
 	}

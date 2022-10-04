@@ -1,7 +1,7 @@
-import Nullstack, { NullstackFragment } from 'nullstack'
+import Nullstack, { NullstackNode } from 'nullstack'
 
 type Props = {
-	children: NullstackFragment,
+	children?: NullstackNode,
 	// eslint-disable-next-line @typescript-eslint/ban-types
 	onClose: Function,
 	title?: string

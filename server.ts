@@ -1,15 +1,15 @@
 import Nullstack, { NullstackServerContext } from 'nullstack'
 import Application from './src/Application'
-
+import { icons } from './icons.json'
 const context = Nullstack.start(Application) as NullstackServerContext
 
 context.start = async function start() {
-	const { project } = context
-	project.icons = {
-		'72': '/favicon-72x72.png',
-		'128': '/favicon-128x128.png',
-		'512': '/favicon-512x512.png'
+	const iconsList = new Map<string, string>()
+	for (const icon of icons) {
+		iconsList.set(icon.sizes.split('x')[0], `./${icon.src}`)
 	}
+	const { project } = context
+	project.icons = Object.fromEntries(iconsList)
 	project.favicon = '/favicon.ico'
 	project.color = '#202A37'
 	project.backgroundColor = '#202A37'
