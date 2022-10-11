@@ -9,11 +9,12 @@ context.start = async function start() {
 		iconsList.set(icon.sizes.split('x')[0], `./${icon.src}`)
 	}
 	const { project } = context
+	project.name = 'Hqist'
 	project.icons = Object.fromEntries(iconsList)
 	project.favicon = '/favicon.ico'
 	project.color = '#202A37'
 	project.backgroundColor = '#202A37'
-	project.display = 'standalone'
+	project.display = 'fullscreen'
 	project.root = '/'
 }
 
