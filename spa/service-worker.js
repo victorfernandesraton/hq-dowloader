@@ -5,7 +5,7 @@ self.context = {
     "development": false,
     "production": true,
     "mode": "spa",
-    "key": "71784beec5324fd87de46efaec75cfc8ab49f780",
+    "key": "44ec504ef50afb0e700687b44bbbe7253de29e40",
     "name": ""
   },
   "project": {
